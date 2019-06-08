@@ -3,8 +3,14 @@
 {% block title %}查看会议室{% endblock %}
  
 {% block content %}
- 
-<div class="container">
+    <script type="text/javascript">
+        $(function () {
+            const H = window.innerHeight ;
+            const DivH =document.getElementById('miracle-div');
+            DivH.style.height=(H-164)+"px";
+        })
+    </script>
+<div class="container" id="miracle-div">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="col-md-5">

@@ -10,7 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="/static/css/base.css">
-        <link rel="stylesheet" type="text/css" href="/static/css/footer/footer.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/home/footer.css">
+        <link rel="stylesheet" type="text/css" href="/static/css/home/header.css">
 		<script type="text/javascript" src="/static/js/jquery.min.js"></script>
 		<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/static/js/bootstrap.js"></script>
@@ -20,56 +21,53 @@
 		<![endif]-->
 	</head>
 	<body>
+    <header id="header-base" >
 		<!--Here is the navbar-->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="home_header">
+        <nav class="navbar navbar-dark navbar-fixed-top home_header" role="navigation">
 			<div class="container ">
                 <div class="navbar-header ">
                 <div class="nav navbar-left" id="navbar-collapse-basepage">
-					<ul class="nav navbar-left">
-                        <li id="homepage"><a href="/"> <img src="/static/images/logo.png" style="height:30px;display:inline;">&nbsp;&nbsp;&nbsp;</a></li>
-						<li id="homepage"><a href="/"> <img src="/static/images/index/home01.png" style="height:30px;display:inline;">&nbsp;首页</a></li>
-                        <li id="homepage"><a href="/"> <img src="/static/images/index/home01.png" style="height:30px;display:inline;">&nbsp;简介</a></li>
-                        <li id="homepage"><a href="/"> <img src="/static/images/index/home01.png" style="height:30px;display:inline;">&nbsp;关于</a></li>
-                        <li><a class="navbar-text">&nbsp;欢迎您！<span id="base_name">{{ user }}</span></a></li>
+					<ul class="nav navbar-left miracle—navbar ">
+                        <li ><a   href="/"> <img src="/static/images/logo.png" style="height:50px;display:inline;"></a></li>
+						<li id="homepage"><a id="miracle-a"  href="/" >首页</a></li>
+                        <li id="homepage"><a id="miracle-a" href="/">简介</a></li>
+                        <li id="homepage"><a id="miracle-a"  href="/">关于</a></li>
+                        <li id="homepage"><a id="miracle-a">&nbsp;欢迎您！<span id="base_name">{{ user }}</span></a></li>
 					</ul>
                 </div>
                 </div>
                 <div class="nav navbar-right ">
 					<ul class="nav  navbar-right">
 						{% if user %}       <!--user是后台数据，判断循环语句都要包在{1%%}里，而一般只显示的数据在{1{}}里-->
-                            <li id="viewbook"><a href="/view_room/">&nbsp;占用情况</a></li>
-							<li><a href="/my_orders/">&nbsp;我的预定</a></li>
-                            <li><a href="/admin/">&nbsp;后台管理</a></li>
-							<li><a href="/logout/">&nbsp;退出</a></li>
+                            <li id="viewbook"> <a id="miracle-a" href="/view_room/"> <img id="miracle-menico" src="/static/images/index/men01.png"></a></li>
+							<li><a id="miracle-a"  href="/my_orders/"><img id="miracle-menico" src="/static/images/index/men02.png"></a></li>
+                            <li><a id="miracle-a"  href="/admin/">&nbsp;<img id="miracle-menico" src="/static/images/index/men03.png"></a></li>
+							<li><a id="miracle-a"  href="/logout/"><img id="miracle-menico" src="/static/images/index/men04.png"></a></li>
 
 						{% else %}
-							<li><a href="/register/">&nbsp;注册</a></li>
-							<li><a href="/login/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;登录</a></li>
+							<li><a id="miracle-a"  href="/register/"><img id="miracle-menico" src="/static/images/index/men05.png"></a></li>
+							<li><a id="miracle-a"  href="/login/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;<img id="miracle-menico" src="/static/images/index/men06.png"></a></li>
 						{% endif %}
 					</ul>
                 </div>
 			</div>
 		</nav>
-		<!-- /nav -->
-		<!-- header -->
-		<header class="jumbotron subhead" id="header-base">
-			<div class="container">
-				<h1>会议管理</h1>
-			</div>
-		</header>
+        </div>
+    </header>
 		<!-- /.header -->
 		<!-- main part -->
 		{% block content %}{% endblock %}
 		<!-- /.main -->
 	
 		<!-- footer -->
-        <footer>
+        <footer >
             <div class="footer" id="divPageFooter">
-                <div style="margin:10px auto; text-align:center; color:#666666; line-height:24px;">
-                    <div>
+                <div >
+                    <div d="miracle-a">
                         © 2019 All Rights Reserved&nbsp;&nbsp;<span data-localize="home_lbl_yunxuetang">Miracle</span> <span data-localize="home_lbl_copyright">版权所有</span>&nbsp;&nbsp;沪ICP备20190606号-666
                     </div>
-                    <div>
+                    <div id="miracle-a">
                         <a href="https://github.com/Mr-Miracle" target="_blank" data-localize="home_lbl_miracle">Miracle</a> <span data-localize="home_lbl_technicalsupport">提供技术支持</span>
                         &nbsp;&nbsp;<a href="https://github.com/Mr-Miracle/Django_Meeting" target="_blank" data-localize="home_lbl_serviceagreement">源码下载</a>
                         &nbsp;&nbsp;jihao.lu@qq.com
@@ -84,6 +82,7 @@
 		<script type="text/javascript">
             const act = document.getElementById("{{ active_menu }}");
 		    act.setAttribute("class","active");
+		    const Height= window.innerHeight ;
 		</script>
 	</body>
 </html>

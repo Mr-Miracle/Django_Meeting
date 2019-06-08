@@ -1,21 +1,22 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-{% block title %}会议室预约{% endblock %}
- 
+{% block title %}home{% endblock %}
+
 {% block content %}
-     <script type="text/javascript">
+    <script type="text/javascript">
         $(function () {
             const H = window.innerHeight ;
             const DivH =document.getElementById('miracle-div');
             DivH.style.height=(H-164)+"px";
         })
     </script>
+
 <div class="container" id="miracle-div">
 	<div class="row">
-		<div class="col-md-8 col-md-offset-2 well">
-			<h2>  恭喜你预约成功！</h2>
-		</div>
-	</div>
+		<p>这个home页面</p>
+    </div>
 </div>
 
+
 {% endblock %}
+

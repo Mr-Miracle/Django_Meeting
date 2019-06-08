@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block title %}注册{% endblock %}
+
 {% block content %}
-<div class="container">
+        <script type="text/javascript">
+        $(function () {
+            const H = window.innerHeight ;
+            const DivH =document.getElementById('miracle-div');
+            DivH.style.height=(H-164)+"px";
+            })
+        </script>
+<div class="container" id="miracle-div">
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
 			{% if state == 'success' %}
@@ -55,4 +63,5 @@
 		</div>
 	</div>
 </div>
+
 {% endblock %}

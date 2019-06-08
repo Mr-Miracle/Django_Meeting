@@ -9,6 +9,13 @@ from Meeting.models import *
 
 
 # 主页
+def home(req):
+    username = req.session.get('username', '')
+    content = {'active_menu': 'homepage', 'user': username}
+    return render(request=req, template_name="home.html", status=200, context=content, )
+
+
+# 首页
 def index(req):
     username = req.session.get('username', '')
     content = {'active_menu': 'homepage', 'user': username}
@@ -42,7 +49,7 @@ def register(req):
 # 登录
 def login(req):
     if req.session.get('username', ''):
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect('/index/')
     state = ""
     if req.POST:
         username = req.POST.get("username", "")
@@ -51,7 +58,7 @@ def login(req):
         if user is not None:
             auth.login(req, user)
             req.session["username"] = username  # 保存登录会话
-            return HttpResponseRedirect('/')
+            return HttpResponseRedirect('/index/')
         else:
             state = "is_not_exist"
     return render(request=req, template_name='login.html', status=200, context={"state": state})
