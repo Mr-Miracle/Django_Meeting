@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2000b5c7-3b5f-4dfe-a03e-daa5ed04fb34" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/home/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/index/men01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/index/men02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/index/men03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/index/men04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/index/men05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/index/men06.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/home/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/html5shiv.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/html5shiv.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,20 +85,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+            <state relative-caret-position="79">
+              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="77" column="7" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/footer/footer.css">
+        <entry file="file://$PROJECT_DIR$/static/css/home/header.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="102">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MeetingDjiango/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <folding>
+                <element signature="e#638#670#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/images/index/men01.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/home/footer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -105,6 +158,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="LuJihao &lt;935184141@qq.com&gt;" />
         <option value="miracle &lt;jihao.lu@qq.com&gt;" />
       </list>
     </option>
@@ -129,7 +183,6 @@
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/MeetingDjiango/settings.py" />
         <option value="$PROJECT_DIR$/Meeting/admin.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/regist.html" />
         <option value="$PROJECT_DIR$/templates/viewroom.html" />
         <option value="$PROJECT_DIR$/templates/detail.html" />
@@ -146,13 +199,16 @@
         <option value="$PROJECT_DIR$/static/css/base.css" />
         <option value="$PROJECT_DIR$/MeetingDjiango/urls.py" />
         <option value="$PROJECT_DIR$/static/css/footer/footer.css" />
+        <option value="$PROJECT_DIR$/static/css/home/footer.css" />
+        <option value="$PROJECT_DIR$/static/css/home/header.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="189" />
-    <option name="y" value="164" />
+    <option name="x" value="245" />
+    <option name="y" value="98" />
     <option name="width" value="1400" />
     <option name="height" value="916" />
   </component>
@@ -170,6 +226,38 @@
             <path>
               <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="Meeting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
@@ -196,15 +284,15 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images" />
+      <recent name="$PROJECT_DIR$/static/images/index" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/images" />
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$/static/css" />
-      <recent name="$PROJECT_DIR$/static/images/index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -267,7 +355,7 @@
       <workItem from="1559969420096" duration="14641000" />
       <workItem from="1560006542515" duration="4336000" />
       <workItem from="1560011764808" duration="1558000" />
-      <workItem from="1560015693921" duration="326000" />
+      <workItem from="1560015693921" duration="8757000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1560012784921</created>
@@ -276,11 +364,25 @@
       <option name="project" value="LOCAL" />
       <updated>1560012784921</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="首次提交">
+      <created>1560016054655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560016054655</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1111">
+      <created>1560016680098</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560016680098</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65099000" />
+    <option name="totallyTimeSpent" value="73530000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -292,21 +394,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="189" y="164" width="1400" height="916" extended-state="0" />
+    <frame x="245" y="98" width="1400" height="916" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18879056" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="GitHub Pull Requests" sideWeight="0.49852508" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" sideWeight="0.49852508" weight="0.3299363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49778762" weight="0.34012738" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49778762" visible="true" weight="0.34012738" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014749" side_tool="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49852508" weight="0.32866243" />
@@ -327,7 +430,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="首次提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="首次提交" />
+    <MESSAGE value="1111" />
+    <option name="LAST_COMMIT_MESSAGE" value="1111" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2d410890-5f91-405c-9d2c-40d5a0d035dd/console.sql">
@@ -426,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -519,28 +616,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MeetingDjiango/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding>
-            <element signature="e#638#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meeting/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -551,17 +631,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/Meeting/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+        <state relative-caret-position="51">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/footer/footer.css">
+    <entry file="file://$PROJECT_DIR$/static/css/home/footer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/index/ziyuan.eps">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/index/会议日程.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/index/men01.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeetingDjiango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/home/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="77" column="7" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,11 +1,81 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-{% block title %}会议室预约{% endblock %}
+{% block title %}会议中心{% endblock %}
 
 {% block content %}
 
 <div class="container">
 	<div class="row">
+        <div class="aside-left-menu" style="height: 1009px">
+
+ <div class="content-top-bar ellipsis" title="我要学习">
+ 我要学习</div>
+ <ul class="aside-menu-list">
+             <li class="menu-title hand" onclick="showThismenu(this,'sty_taskcenter')">任务中心<span class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+ <li class=" sty_taskcenter"><a href="/apps/signup/signupcentermgmt.htm" target="_self">
+ <span class="new-iconfont nicon-workplan v-mid"></span><span class="v-top ml15">报名中心</span></a></li>
+ <li class=" sty_taskcenter"><a href="/sty/mystudytask.htm" target="_self">
+ <span class="new-iconfont nicon-renwu01 v-mid"></span><span class="v-top ml15">我的任务</span></a></li>
+ <li class=" sty_taskcenter"><a href="/o2o/sty/canregtrain.htm" target="_self">
+ <span class="new-iconfont nicon-peixun v-mid"></span><span class="v-top ml15">我的培训</span></a></li>
+
+             <li class="menu-title hand" onclick="showThismenu(this,'usm_shared')">贡献分享<span class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+ <li class=" usm_shared"><a href="/kng/myshared.htm" target="_self">
+ <span class="new-iconfont nicon-fenxiang v-mid"></span><span class="v-top ml15">我要分享</span></a></li>
+ <li class=" usm_shared"><a href="/o2o/schedule.htm" target="_self">
+ <span class="new-iconfont nicon-course-calendar v-mid"></span><span class="v-top ml15">授课日历</span></a></li>
+ <li class=" usm_shared"><a href="/kng/kngcheck.htm" target="_self">
+ <span class="new-iconfont nicon-verify v-mid"></span><span class="v-top ml15">知识审核</span></a></li>
+
+             <li class="menu-title hand" onclick="showThismenu(this,'user_interactive')">互动参与<span class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+ <li class=" user_interactive"><a href="/study/mycomment.htm" target="_self">
+ <span class="new-iconfont nicon-pinglun v-mid"></span><span class="v-top ml15">我的评论</span></a></li>
+ <li class=" user_interactive"><a href="/o2o/sty/canjoinsurvey.htm" target="_self">
+ <span class="new-iconfont nicon-iconfontdiaocha v-mid"></span><span class="v-top ml15">我的调查</span></a></li>
+
+             <li class="menu-title hand" onclick="showThismenu(this,'userinfomation')">个人信息<span class="fa fa-angle-up pull-right font-size-24 mt7"></span></li>
+ <li class=" userinfomation"><a href="/udp/personal/baseinfo.htm" target="_self">
+ <span class="new-iconfont nicon-info v-mid"></span><span class="v-top ml15">基本资料</span></a></li>
+ <li class=" userinfomation"><a href="/study/mypointhistory.htm" target="_self">
+ <span class="new-iconfont nicon-jifen v-mid"></span><span class="v-top ml15">我的积分</span></a></li>
+ </ul>
+    <script type="text/javascript">
+ //展开收起
+ function showThismenu(obj,name) {
+ if ($(obj).find('span:last').hasClass("fa-angle-up")) {
+ $('.'+name).hide();
+ $(obj).find('span:last').removeClass("fa-angle-up");
+ $(obj).find('span:last').addClass("fa-angle-down");
+                SetNavCookie(name,1);
+ }
+ else {
+ $('.'+name).show();
+ $(obj).find('span:last').removeClass("fa-angle-down");
+ $(obj).find('span:last').addClass("fa-angle-up");
+                SetNavCookie(name,2);
+ }
+ }
+
+         function SetNavCookie(name,type) {
+ var arr = '{"name":"' + name + '","type":' + type + '}';
+ jQuery.ajax({
+ type: "POST",
+ contentType: "text/json",
+ url: "/Services/CommonService.svc/SetNavCookie",
+ data: arr,
+ dataType: 'json',
+ cache: false,
+ success: function (msgResult) {
+
+ },
+ error: function (xmlHttpRequest, error) {
+
+ }
+ });
+
+ }
+ </script>
+ </div>
 		<div class="col-md-8 col-md-offset-2 well">
 			<h2>欢迎访问会议室预约平台！</h2>
 		</div>
