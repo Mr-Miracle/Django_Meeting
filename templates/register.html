@@ -49,16 +49,39 @@
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="id_email" class="col-md-3 control-label">电话号码：</label>
+					<label for="id_email" class="col-md-3 control-label">邮箱：</label>
 					<div class="col-md-9">
-						<input type="text" class="form-control" required name="phone" id="id_phone">
+						<input type="text" class="form-control" required name="email" id="id_email">
 					</div>
 				</div>
+
+                <div class="form-group">
+					<label for="id_phone" class="col-md-3 control-label">手机：</label>
+					<div class="col-md-9">
+						<div class="input-type">
+                            <select name="" id="">
+                                <option value="">中国+86</option>
+                                <option value="">中国香港+852</option>
+                                <option value="">中国台湾+886</option>
+                            </select>
+                        </div>
+                        <div class="col-md-9">
+						    <input type="text" maxlength="11" minlength="11" class="form-control" required name="phone" id="id_phone">
+					    </div>
+					</div>
+				</div>
+
 				<div class="form-group">
 					<div class="col-md-4 col-md-offset-4">
-						<button class="btn btn btn-primary btn-block" type="submit" id="id_submit">注册</button>
+						<button class="btn btn btn-primary btn-block" type="submit" id="id_submit">立即注册</button>
 					</div>
 				</div>
+                <div class="type-radio">
+                 <input type="radio" checked><span>我同意</span>
+                 <br>
+                 <input type="radio" checked><span>我已阅读并同意相关服务条款和隐私政策</span>
+             </div>
+
 			</form>
 		</div>
 	</div>

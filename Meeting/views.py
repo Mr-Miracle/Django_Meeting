@@ -8,13 +8,6 @@ from django.contrib import auth
 from Meeting.models import *
 
 
-# 主页
-def home(req):
-    username = req.session.get('username', '')
-    content = {'active_menu': 'homepage', 'user': username}
-    return render(request=req, template_name="home.html", status=200, context=content, )
-
-
 # 首页
 def index(req):
     username = req.session.get('username', '')
