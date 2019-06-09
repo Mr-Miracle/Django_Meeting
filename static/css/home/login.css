@@ -1,0 +1,16 @@
+
+#miracle-max-div{
+    background-image: url("/static/images/background.png");
+}
+
+.clearfix{
+
+}
+
+.active{
+    text-align: center;
+}
+
+.form-control{
+    table-layout: fixed;
+}
