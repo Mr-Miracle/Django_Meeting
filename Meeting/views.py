@@ -46,7 +46,7 @@ def login(req):
         email = req.POST.get("email", "")
         password = req.POST.get("password", "")
         user = auth.authenticate(email=email, password=password)
-        if user is not None:
+        if user:
             auth.login(req, user)
             req.session["user"] = user  # 保存登录会话
             return HttpResponseRedirect('/index/')

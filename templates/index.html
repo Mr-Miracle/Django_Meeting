@@ -62,23 +62,22 @@
  }
  }
 
-         function SetNavCookie(name,type) {
- var arr = '{"name":"' + name + '","type":' + type + '}';
- jQuery.ajax({
- type: "POST",
- contentType: "text/json",
- url: "/Services/CommonService.svc/SetNavCookie",
- data: arr,
- dataType: 'json',
- cache: false,
- success: function (msgResult) {
+ function SetNavCookie(name,type) {
+     const arr = '{"name":"' + name + '","type":' + type + '}';
+     jQuery.ajax({
+     type: "POST",
+     contentType: "text/json",
+     url: "/Services/CommonService.svc/SetNavCookie",
+     data: arr,
+     dataType: 'json',
+     cache: false,
+    success: function (msgResult) {
 
- },
+    },
  error: function (xmlHttpRequest, error) {
 
  }
  });
-
  }
  </script>
  </div>
