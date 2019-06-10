@@ -1,7 +1,13 @@
 <component name="ProjectDictionaryState">
   <dictionary name="miracle">
     <words>
+      <w>enddate</w>
+      <w>endtime</w>
       <w>navbar</w>
+      <w>orderdate</w>
+      <w>repassword</w>
+      <w>startdate</w>
+      <w>starttime</w>
       <w>viewbook</w>
     </words>
   </dictionary>

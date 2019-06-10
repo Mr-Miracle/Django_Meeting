@@ -3,54 +3,66 @@
 {% block title %}登录{% endblock %}
 
 {% block content %}
-    <script type="text/javascript">
-        $(function () {
-            const H = window.innerHeight ;
-            const DivH =document.getElementById('miracle-max-div');
-            DivH.style.height=(H-164)+"px";
-        })
-    </script>
-
-<div class="container" id="miracle-max-div">
-	<div class="row" id="miracle-login-background">
-		<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-			<form method="POST" role="form" class="form-horizontal"
-                    style="background-color: seashell; padding: 30px 30px 0px 30px;">
-
-				{% csrf_token %}
-                <div>
-                    <div class="head head-tab clearfix">
-                        <div class="tab-item active">登录会议中心</div>
-                    </div>
-                </div>
-
-				<div class="form-group">
-					<label for="id_user_name" class="col-md-3 control-label">用户名：</label>
-					<div class="col-md-9">
-						<input type="text" class="form-control" id="id_user_name" required name="username" autofocus>
-					</div>	
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
 				</div>
- 
-				<div class="form-group">
-					<label for="id_passwd" class="col-md-3 control-label">密码：</label>
-					<div class="col-md-9">
-						<input type="password" class="form-control" required name="passwd" id="id_passwd">
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<div class="row clearfix">
+						<div class="col-md-8 column">
+						</div>
+						<div class="col-md-4 column">
+							<h3 class="text-center muted">
+                                .         .
+							</h3>
+							<form method="POST" class="form-horizontal" role="form">
+                                 {% csrf_token %}
+								<div class="form-group">
+									 <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+									<div class="col-sm-10">
+										<input type="email" class="form-control" id="inputEmail3" required email="email" autofocus/>
+									</div>
+								</div>
+								<div class="form-group">
+									 <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+									<div class="col-sm-10">
+										<input type="password" class="form-control" id="inputPassword3" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										<div class="checkbox">
+											 <label><input type="checkbox" />Remember</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-offset-2 col-sm-10">
+										 <button type="submit" class="btn btn-default">Sign in</button>
+									</div>
+								</div>
+							</form>
+                            {% if state == is_not_exist %}
+							<div class="alert alert-success alert-dismissable">
+								 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+								<h4>
+									Login error:
+								</h4> <strong>Warning!</strong> The user does not exist or is not registered. <a href="/register/" class="alert-link">Click here to register</a>
+							</div>
+                            {% endif %}
+						</div>
 					</div>
 				</div>
-				<div class="form-group">
-					<div class="col-md-4 col-md-offset-4">
-						<button class="btn btn btn-primary btn-block" type="submit">登录</button>
-					</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-12 column">
 				</div>
-
-                {% if status == is_not_exist %}
-				<div class="well">
-					<h5 class="text-danger text-center">用户不存在或密码错误</h5>
-				</div>
-			    {% endif %}
-			</form>
+			</div>
 		</div>
 	</div>
 </div>
- 
 {% endblock %}

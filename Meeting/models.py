@@ -3,44 +3,55 @@ from django.db import models
 # Create your models here.
 
 
-class MyUser(models.Model):
-    username = models.CharField(max_length=50, primary_key=True)
-    password = models.CharField(max_length=50)
-    phone = models.CharField(max_length=20)
-    email = models.CharField(max_length=30)
+class Users(models.Model):
+    email = models.CharField(max_length=50, primary_key=True)
+    username = models.CharField(max_length=50)
+    password = models.CharField(max_length=20)
+    phone = models.CharField(max_length=30)
     create_date = models.DateTimeField(auto_now_add=True)
     modify_date = models.DateTimeField(auto_now_add=True)
 
+    def __unicode__(self):
+        return self.name
 
-class ConfeRoom(models.Model):
-    list_display = ('pub_date', 'headline')
-    pub_date = models.DateField()
-    headline = models.CharField(max_length=200)
-    content = models.TextField()
+
+class Rooms(models.Model):
+    code = models.CharField(max_length=20)
+    name = models.CharField(max_length=20)
+    floor = models.CharField(max_length=20)
+    capacity = models.CharField(max_length=20)
+    equipment = models.CharField(max_length=20)
+    create_date = models.DateTimeField(auto_now_add=True)
+    modify_date = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
         return self.name
 
 
-class Order(models.Model):
-    list_display = ('pub_date', 'headline')
-    pub_date = models.DateField()
-    headline = models.CharField(max_length=200)
-    content = models.TextField()
+class Orders(models.Model):
+    theme = models.CharField(max_length=20)
+    room = models.CharField(max_length=20)
+    creator = models.CharField(max_length=20)
+    department = models.CharField(max_length=50)
+    partner = models.CharField(max_length=100)
+    orderdate = models.DateTimeField(max_length=20)
+    starttime = models.DateTimeField(max_length=20)
+    endtime = models.DateTimeField(max_length=20)
+    create_date = models.DateTimeField(auto_now_add=True)
+    modify_date = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
         return self.name
 
 
-class Detail(models.Model):
-    list_display = ('pub_date', 'headline')
-    pub_date = models.DateField()
-    headline = models.CharField(max_length=200)
-    content = models.TextField()
-#  reporter = models.ForeignKey(Reporter, on_delete=models.CASCADE)
+class Parks(models.Model):
+    code = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
+    place = models.CharField(max_length=50)
+    create_date = models.DateTimeField(auto_now_add=True)
+    modify_date = models.DateTimeField(auto_now_add=True)
 
     def __unicode__(self):
         return self.name
-
 
 
