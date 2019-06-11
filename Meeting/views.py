@@ -19,19 +19,19 @@ def register(req):
     if req.session.get('email', ''):  # 获取session用来判断用户是否登录
         return HttpResponseRedirect('/')
 
-    email = req.POST.get("email", "")
+    email = req.POST.get("id_Email", "")
     if Users.objects.filter(email=email):
         state = "user_exist"
     else:
-        password = req.POST.get("password", "")
-        repassword = req.POST.get("repassword", "")
+        password = req.POST.get("id_Password", "")
+        repassword = req.POST.get("id_Repassword", "")
         if password != repassword:
             state = "re_err"
         else:
-            username = req.POST.get("username", "")
-            phone = req.POST.get("phone", "")
-            new_user = Users.objects.create(email=email, password=password, username=username, phone=phone)
-            new_user.save()
+            username = req.POST.get("id_Name", "")
+            phone = req.POST.get("id_Phone", "")
+            new_DB_user = Users.objects.create(email=email, password=password, username=username, phone=phone)
+            new_DB_user.save()
             return HttpResponseRedirect("/login/")
 
     return render(request=req, template_name='register.html', status=200, context={"active_menu": "index", "state": state, "username": ""}, )
