@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MeetingDB" uuid="2090194f-6555-4131-bf02-5cde3a21094e">
+    <data-source name="Django default" uuid="2dbc40b8-e941-4b16-977c-6a7a1df82efd">
       <database-info product="MySQL" version="5.7.26-0ubuntu0.19.04.1" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="5.7.26" exact-driver-version="8.0">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
       <user-name>ljh</user-name>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>

@@ -16,7 +16,14 @@
 					<h3 class="text-xl-left" style="color: darkgreen; padding: 20px">
 						 注册您的账户
 					</h3>
-					<form class="form-horizontal" role="form">
+					<form method="post" class="form-horizontal" role="form">
+                        {% csrf_token %}
+                        <div class="form-group">
+							 <label for="id_name" class="col-sm-3 control-label">用户名:</label>
+							<div class="col-sm-8">
+								<input type="text" class="form-control" id="id_Name" required name="id_Name" />
+							</div>
+						</div>
 						<div class="form-group">
 							 <label for="id_Email" class="col-sm-2 control-label">邮箱:</label>
 							<div class="col-sm-8">
@@ -36,13 +43,7 @@
 							</div>
 						</div>
                         <div class="form-group">
-							 <label for="id_name" class="col-sm-3 control-label">姓名:</label>
-							<div class="col-sm-8">
-								<input type="text" class="form-control" id="id_Name" required name="id_Name" />
-							</div>
-						</div>
-                        <div class="form-group">
-                            <label for="id_Phone" class="col-sm-3 control-label">手机：</label>
+                            <label for="id_Phone" class="col-sm-3 control-label">手机号码：</label>
                             <div class="col-sm-8">
 						        <input type="text" maxlength="11" minlength="11" class="form-control" id="id_Phone" required name="id_Phone" >
 					        </div>
@@ -60,6 +61,24 @@
 							</div>
 						</div>
 					</form>
+                    {% if state == "user_exist" %}
+							<div class="alert alert-success alert-dismissable col-sm-offset-2 col-sm-8">
+								 <button type="button" class="close" data-dismiss="alert" aria-hidden="false">×</button>
+                                <strong>用户名或邮箱信息已经存在，请再次输入！</strong>
+							</div>
+                    {% endif %}
+                    {% if state == "re_err" %}
+							<div class="alert alert-success alert-dismissable col-sm-offset-2 col-sm-8">
+								 <button type="button" class="close" data-dismiss="alert" aria-hidden="false">×</button>
+                                <strong>密码重复错误</strong>
+							</div>
+                    {% endif %}
+                    {% if state == "success" %}
+							<div class="alert alert-success alert-dismissable col-sm-offset-2 col-sm-8">
+								 <button type="button" class="close" data-dismiss="alert" aria-hidden="false">×</button>
+                                <strong>注册成功！</strong>
+							</div>
+                    {% endif %}
 				</div>
 			</div>
 		</div>

@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2000b5c7-3b5f-4dfe-a03e-daa5ed04fb34" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5f2e921e-ce6b-41a6-92cd-8c37fc86c94e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Meeting/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Meeting/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetingDjiango/authenticate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MeetingDjiango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MeetingDjiango/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,20 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="50" column="107" selection-start-line="50" selection-start-column="107" selection-end-line="50" selection-end-column="107" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="46" column="49" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -83,10 +75,49 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Meeting/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="170">
+              <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
               <folding>
-                <element signature="e#37#72#0" expanded="true" />
+                <element signature="e#36#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MeetingDjiango/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-402">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MeetingDjiango/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+              <folding>
+                <element signature="e#638#670#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,22 +179,23 @@
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/MeetingDjiango/urls.py" />
         <option value="$PROJECT_DIR$/static/css/home/login.css" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/index2.html" />
         <option value="$PROJECT_DIR$/Meeting/admin.py" />
         <option value="$PROJECT_DIR$/Meeting/models.py" />
-        <option value="$PROJECT_DIR$/MeetingDjiango/authenticate.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/MeetingDjiango/authenticate.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/Meeting/authenticate.py" />
         <option value="$PROJECT_DIR$/MeetingDjiango/settings.py" />
-        <option value="$PROJECT_DIR$/Meeting/views.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/register.html" />
+        <option value="$PROJECT_DIR$/Meeting/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="86" />
+    <option name="x" value="303" />
+    <option name="y" value="115" />
     <option name="width" value="1400" />
     <option name="height" value="916" />
   </component>
@@ -196,6 +228,17 @@
             <path>
               <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MeetingDjiango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MeetingDjiango" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -219,18 +262,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Meeting" />
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="$PROJECT_DIR$/static/images/index" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/js" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -297,7 +341,10 @@
       <workItem from="1560040106918" duration="14498000" />
       <workItem from="1560092947150" duration="3945000" />
       <workItem from="1560166016590" duration="15782000" />
-      <workItem from="1560267691789" duration="5306000" />
+      <workItem from="1560267691789" duration="5354000" />
+      <workItem from="1560339446825" duration="5505000" />
+      <workItem from="1560352986077" duration="4392000" />
+      <workItem from="1560424231066" duration="14555000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1560012784921</created>
@@ -376,11 +423,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560186233575</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修改主页页面">
+      <created>1560273223379</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1560273223379</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113206000" />
+    <option name="totallyTimeSpent" value="137706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,15 +446,43 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="86" width="1400" height="916" extended-state="0" />
+    <frame x="330" y="128" width="1400" height="916" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20058997" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16224189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49705014" visible="true" weight="0.28025478" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49705014" visible="true" weight="0.28025478" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" weight="0.32866243" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50294983" side_tool="true" weight="0.24076433" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49705014" weight="0.24076433" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3299363" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32866243" />
+      <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="15" sideWeight="0.49852508" weight="0.3299363" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32964602" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" weight="0.32964602" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.21460177" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20943953" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49705014" visible="true" weight="0.28025478" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -420,35 +502,7 @@
       <window_info anchor="right" id="SciView" order="3" weight="0.32964602" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" weight="0.32964602" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.21312684" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19174041" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49778762" visible="true" weight="0.34012738" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32866243" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
-      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32866243" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5014749" side_tool="true" weight="0.3299363" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49852508" weight="0.32866243" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3299363" />
-      <window_info anchor="bottom" id="Database Console" order="13" weight="0.32866243" />
-      <window_info anchor="bottom" id="SQL Generator" order="14" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="15" sideWeight="0.49852508" weight="0.3299363" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.32964602" />
-      <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="right" id="R Packages" order="5" weight="0.32964602" />
-      <window_info anchor="right" id="Database" order="6" weight="0.21312684" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.1600295" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,36 +515,10 @@
     <MESSAGE value="前端样式修改，body DIV自适应浏览器高度。" />
     <MESSAGE value="页面逻辑修改" />
     <MESSAGE value="注册页面逻辑正确" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册页面逻辑正确" />
+    <MESSAGE value="修改主页页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改主页页面" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/images/index/men01.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/miracle-div.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/view_room.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://5f2e921e-ce6b-41a6-92cd-8c37fc86c94e/schema/meetingDB/table/sys_user" />
     <entry file="das://5f2e921e-ce6b-41a6-92cd-8c37fc86c94e/schema/meetingDB/table/Meeting_myuser" />
     <entry file="file://$PROJECT_DIR$/static/css/home/home.css" />
@@ -502,23 +530,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html" />
-    <entry file="file://$PROJECT_DIR$/MeetingDjiango/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="e#638#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/my_orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -545,114 +556,18 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2090194f-6555-4131-bf02-5cde3a21094e/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_group">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_group_permissions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/sys_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_order">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_detail">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_conferoom">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_migrations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_content_type">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_admin_log">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_user_user_permissions">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_myuser">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_user" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_group" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_group_permissions" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/sys_user" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_order" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_detail" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_conferoom" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_migrations" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_content_type" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_admin_log" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/auth_user_user_permissions" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_myuser" />
     <entry file="file://$PROJECT_DIR$/templates/index2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -677,91 +592,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_session">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="46be8ccf-2a08-42da-892c-f487c8d391e3">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" selection-start-line="82" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="98" selection-start-line="36" selection-start-column="98" selection-end-line="36" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeetingDjiango/authenticate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Meeting/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeetingDjiango/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#355#364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="50" column="107" selection-start-line="50" selection-start-column="107" selection-end-line="50" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <element signature="n#style#0;n#h3#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2dbc40b8-e941-4b16-977c-6a7a1df82efd/schema/meetingDB/table/Meeting_users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d3db0a5c-0821-4ffa-9905-1498af4eadd1">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/Meeting_users" />
+    <entry file="das://2090194f-6555-4131-bf02-5cde3a21094e/schema/meetingDB/table/django_session" />
     <entry file="das://2dbc40b8-e941-4b16-977c-6a7a1df82efd/schema/meetingDB/table/django_session">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="d3db0a5c-0821-4ffa-9905-1498af4eadd1">
@@ -816,21 +648,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2dbc40b8-e941-4b16-977c-6a7a1df82efd/schema/meetingDB/table/auth_user">
+    <entry file="file://$PROJECT_DIR$/templates/my_orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meeting/authenticate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="37" column="25" lean-forward="true" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="378" column="29" selection-start-line="378" selection-start-column="16" selection-end-line="378" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="200" column="27" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2dbc40b8-e941-4b16-977c-6a7a1df82efd/schema/meetingDB/table/django_admin_log">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="d3db0a5c-0821-4ffa-9905-1498af4eadd1">
+        <state projectRestartId="e5f8a74e-a0dc-4ea6-b3b6-c764b1df1aca">
           <filtering>
             <filter text="" />
           </filtering>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Meeting/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeetingDjiango/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-402">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2dbc40b8-e941-4b16-977c-6a7a1df82efd/schema/meetingDB/table/auth_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e5f8a74e-a0dc-4ea6-b3b6-c764b1df1aca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2dbc40b8-e941-4b16-977c-6a7a1df82efd/schema/meetingDB/table/Meeting_users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state projectRestartId="e5f8a74e-a0dc-4ea6-b3b6-c764b1df1aca">
+          <filtering>
+            <filter text="" />
+          </filtering>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeetingDjiango/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Meeting/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="170">
+          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
           <folding>
-            <element signature="e#37#72#0" expanded="true" />
+            <element signature="e#36#93#0" expanded="true" />
           </folding>
         </state>
       </provider>

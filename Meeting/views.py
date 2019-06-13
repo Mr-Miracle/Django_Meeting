@@ -1,64 +1,63 @@
 """django 视图模块，通过它可以把用户请求的页面调出来。"""
-
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render
 from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
-from django.contrib import auth
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import *
 from Meeting.models import *
 
 
 # 首页
 def index(req):
     username = req.session.get('username', '')
-    content = {'active_menu': 'homepage', 'user': username}
+    content = {'user': username}
     return render_to_response('index.html', content)  # 将数据返回到前台
 
 
 # 注册
 def register(req):
-    if req.session.get('email', ''):  # 获取session用来判断用户是否登录
-        return HttpResponseRedirect('/')
-
-    email = req.POST.get("id_Email", "")
-    if Users.objects.filter(email=email):
-        state = "user_exist"
-    else:
-        password = req.POST.get("id_Password", "")
-        repassword = req.POST.get("id_Repassword", "")
-        if password != repassword:
-            state = "re_err"
+    if req.method == 'GET':
+        return render(req, 'register.html')
+    if req.method == 'POST':
+        email = req.POST.get("id_Email")
+        name = req.POST.get("id_Name")
+        if Users.objects.filter(email=email, username=name):
+            state = "user_exist"
+            return render(req, 'register.html', {'state': state})
         else:
-            username = req.POST.get("id_Name", "")
-            phone = req.POST.get("id_Phone", "")
-            new_DB_user = Users.objects.create(email=email, password=password, username=username, phone=phone)
+            password = req.POST.get("id_Password")
+            phone = req.POST.get("id_Phone")
+            new_DB_user = Users.objects.create(email=email, password=password, username=name, phone=phone)
+            new_DB_User = User.objects.create_user(email=email, password=password, username=name)
             new_DB_user.save()
-            return HttpResponseRedirect("/login/")
-
-    return render(request=req, template_name='register.html', status=200, context={"active_menu": "index", "state": state, "username": ""}, )
+            new_DB_User.save()
+            state = 'success'
+            return render(req, 'login.html', {'state': state})
 
 
 # 登录
 def login(req):
-    if req.session.get('usr', ''):
-        return HttpResponseRedirect('/index/')
-    state = ""
-    if req.POST:
-        email = req.POST.get("email", "")
-        password = req.POST.get("password", "")
-        user = auth.authenticate(email=email, password=password)
+    if req.method == 'GET':
+        return render(req, 'login.html')
+    if req.method == 'POST':
+        username = req.POST.get('id_Username')
+        password = req.POST.get('id_Password')
+        # 数据校验,用户校验
+        user = authenticate(username=username, password=password)
         if user:
-            auth.login(req, user)
-            req.session["user"] = user  # 保存登录会话
-            return HttpResponseRedirect('/index/')
+            # 用户登录
+            login(request=req, user=user)
+            # 登录成功返回页面
+            return render(req, 'index.html', {'state': 'success', 'message': '登录成功'})
         else:
-            state = "is_not_exist"
-    return render(request=req, template_name='login.html', status=200, context={"state": state})
+            return render(req, 'login.html', {'state': 'fail', 'message': '用户不存在或在密码错误，'})
 
 
 # 退出登录
 def logout(req):
     auth.logout(req)
-    return HttpResponseRedirect('/')
+    return HttpResponseRedirect('/login')
 
 
 # 获取园区列表
