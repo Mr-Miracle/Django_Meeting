@@ -61,24 +61,13 @@
 							</div>
 						</div>
 					</form>
-                    {% if state == "user_exist" %}
+                    {% if message %}
 							<div class="alert alert-success alert-dismissable col-sm-offset-2 col-sm-8">
 								 <button type="button" class="close" data-dismiss="alert" aria-hidden="false">×</button>
-                                <strong>用户名或邮箱信息已经存在，请再次输入！</strong>
+                                <strong>{{ message }}</strong>
 							</div>
                     {% endif %}
-                    {% if state == "re_err" %}
-							<div class="alert alert-success alert-dismissable col-sm-offset-2 col-sm-8">
-								 <button type="button" class="close" data-dismiss="alert" aria-hidden="false">×</button>
-                                <strong>密码重复错误</strong>
-							</div>
-                    {% endif %}
-                    {% if state == "success" %}
-							<div class="alert alert-success alert-dismissable col-sm-offset-2 col-sm-8">
-								 <button type="button" class="close" data-dismiss="alert" aria-hidden="false">×</button>
-                                <strong>注册成功！</strong>
-							</div>
-                    {% endif %}
+
 				</div>
 			</div>
 		</div>

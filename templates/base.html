@@ -34,13 +34,13 @@
 						<li id="homepage"><a id="miracle-a"  href="/index/" >首页</a></li>
                         <li id="homepage"><a id="miracle-a" href="/">简介</a></li>
                         <li id="homepage"><a id="miracle-a"  href="/">关于</a></li>
-                        <li id="homepage"><a id="miracle-a">&nbsp;欢迎您！<span id="base_name">{{ user }}</span></a></li>
+                        <li id="homepage"><a id="miracle-a"><span id="base_name"> &nbsp;欢迎您！ {{ request.session.user }}</span></a></li>
 					</ul>
                 </div>
                 </div>
                 <div class="nav navbar-right ">
 					<ul class="nav  navbar-right">
-						{% if user %}       <!--user是后台数据，判断循环语句都要包在{1%%}里，而一般只显示的数据在{1{}}里-->
+						{% if request.session.user %}       <!--user是session数据，判断循环语句都要包在{1%%}里，而一般只显示的数据在{1{}}里-->
                             <li id="viewbook"> <a id="miracle-a" href="/view_room/"> <img id="miracle-menico" src="/static/images/index/men01.png"></a></li>
 							<li><a id="miracle-a"  href="/my_orders/"><img id="miracle-menico" src="/static/images/index/men02.png"></a></li>
                             <li><a id="miracle-a"  href="/admin/">&nbsp;<img id="miracle-menico" src="/static/images/index/men03.png"></a></li>
