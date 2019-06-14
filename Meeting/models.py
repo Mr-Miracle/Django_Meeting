@@ -6,7 +6,7 @@ from django.db import models
 class Users(models.Model):
     email = models.CharField(max_length=50, primary_key=True)
     username = models.CharField(max_length=50)
-    password = models.CharField(max_length=20)
+    password = models.CharField(max_length=120)
     phone = models.CharField(max_length=30)
     create_date = models.DateTimeField(auto_now_add=True)
     modify_date = models.DateTimeField(auto_now_add=True)

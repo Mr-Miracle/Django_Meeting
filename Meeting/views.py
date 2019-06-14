@@ -1,10 +1,7 @@
 """django 视图模块，通过它可以把用户请求的页面调出来。"""
-from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect
 from django.contrib.auth.hashers import make_password
-from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import *
 from Meeting.models import *
 
