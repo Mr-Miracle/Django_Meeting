@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-{% block title %}查看{% endblock %}
+{% block title %}会议室管理{% endblock %}
  
 {% block content %}
     <script type="text/javascript">
@@ -15,14 +15,14 @@
 		<div class="col-md-10 col-md-offset-1">
 			<div class="col-md-2">
 				<div class="list-group">
-					<a href="/view_room/" class="list-group-item" id="id_typ_all">全部会议室</a>
-					{% for acad in acad_list %}     <!--循环学院列表-->
-					<a href="/view_room?acad={{ acad }}" class="list-group-item" id="id_typ_{{ acad }}">{{ acad }} </a>
+					<a href="/view_room/" class="list-group-item" id="id_typ_all">集团园区</a>
+					{% for park in park_list %}
+					<a href="/view_room?park={{ park }}" class="list-group-item" id="id_typ_{{ park }}">{{ park }} </a>
 					{% endfor %}
 				</div>
 				<script type="text/javascript">
-				    var act_typ = document.getElementById("id_typ_{{acad_list}}");
-				    var new_class = act_typ.getAttribute("class") + " active"
+				    const act_typ = document.getElementById("id_typ_{{park_list}}");
+				    const new_class = act_typ.getAttribute("class") + " active"
 				    act_typ.setAttribute("class",new_class);
 				</script>
 			</div>
@@ -30,14 +30,14 @@
 				<div class="col-md-4 col-md-offset-8">
 					<form role="form" method="post" name="search_form">
 						{% csrf_token %}
-						<input type="search" class="form-control" name="number" placeholder="Enter keywords to search" id="id_search_input" onkeyup="whenkeyup()" autofocus="True">
+						<input type="search" class="col-sm-10 form-control" name="number" placeholder="输入关键字搜索" id="id_search_input" onkeyup="whenkeyup()" autofocus="True">
 					</form>
 				</div>
 				<script type="text/javascript">
 					function whenkeyup () {
-						var oldvalue = document.getElementById('id_search_input').value
+						const oldvalue = document.getElementById('id_search_input').value
 						setTimeout(function(){
-							var newvalue = document.getElementById('id_search_input').value
+							const newvalue = document.getElementById('id_search_input').value
 							if (oldvalue == newvalue) {
 								document.search_form.submit();
 							};
@@ -47,36 +47,35 @@
 				<table class="table table-hover">
 					<thead>
 						<tr>
-							<th>会议室号</th>
-							<th>会议室名</th>
-							<th>大小</th>
-							<th>详情</th>
+							<th>会议室编号</th>
+							<th>会议室名称</th>
+							<th>可容纳人数</th>
+							<th>详细信息</th>
 						</tr>
 					</thead>
 					<tbody>
 						{% for room in room_list %}
 						<tr>
 					
-							<td>{{ room.num }}</td>
+							<td>{{ room.code }}</td>
 							<td>{{ room.name }}</td>
-							<td>{{ room.size }}</td>
+							<td>{{ room.capacity }}</td>
 							<td><a href="/detail/?id={{room.id}}">查看</a></td> 
 						</tr>
-					
-				
+
 						{% endfor %}
 					</tbody>
 				</table>
 				<nav>
 					<ul class="pager">
 						{% if room_list.has_previous %}
-							<li class="previous"><a href="?typ={{room_acad}}&page={{ room_list.previous_page_number }}">上一页</a></li>
+							<li class="previous"><a href="?typ={{room_park}}&page={{ room_list.previous_page_number }}">上一页</a></li>
 						{% else %}
 							<li class="previous disabled"><a href="#">上一页</a></li>
 						{% endif %}
 						第 {{ room_list.number }} / {{ room_list.paginator.num_pages }}页
 						{% if room_list.has_next %}
-							<li class="next"><a href="?acad={{room_acad}}&page={{ room_list.next_page_number }}">下一页</a></li>
+							<li class="next"><a href="?park={{room_park}}&page={{ room_list.next_page_number }}">下一页</a></li>
 						{% else %}
 							<li class="next disabled"><a href="#">下一页</a></li>
 						{% endif %}

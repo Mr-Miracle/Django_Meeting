@@ -11,6 +11,7 @@
       <w>startdate</w>
       <w>starttime</w>
       <w>viewbook</w>
+      <w>whenkeyup</w>
     </words>
   </dictionary>
 </component>

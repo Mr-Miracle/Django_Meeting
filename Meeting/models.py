@@ -18,6 +18,7 @@ class Users(models.Model):
 class Rooms(models.Model):
     code = models.CharField(max_length=20)
     name = models.CharField(max_length=20)
+    parks_id = models.ForeignKey('Parks', on_delete=models.CASCADE)
     floor = models.CharField(max_length=20)
     capacity = models.CharField(max_length=20)
     equipment = models.CharField(max_length=20)
@@ -30,7 +31,7 @@ class Rooms(models.Model):
 
 class Orders(models.Model):
     theme = models.CharField(max_length=20)
-    room = models.CharField(max_length=20)
+    room_id = models.ForeignKey('Rooms', on_delete=models.CASCADE)
     creator = models.CharField(max_length=20)
     department = models.CharField(max_length=50)
     partner = models.CharField(max_length=100)

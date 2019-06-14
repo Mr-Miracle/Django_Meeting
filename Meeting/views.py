@@ -1,4 +1,5 @@
 """django 视图模块，通过它可以把用户请求的页面调出来。"""
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.contrib.auth.hashers import make_password
@@ -85,26 +86,27 @@ def get_park_list():
 
 
 # 查看会议室
+
 def view_room(req):
-    username = req.session.get('username', '')
-    if username != '':
-        user = Users.objects.get(username=username)
-    else:
-        user = ''
+    if not req.session.get('user'):  # 限制未登录查看页面
+        return redirect('/login')
+    username = req.session.get('user')
     park_list = get_park_list()
     room_park = req.GET.get("park", "all")  # 从前台点击选择学院，
     if room_park not in park_list:  # 如果没有就全部显示
         room_park = "all"
-        room_list = Parks.objects.all()
+        room_list = Rooms.objects.all()
     else:
-        room_list = Parks.objects.filter(acad=room_park)  # 只显示选定学院的会议室
+        room_list = Rooms.objects.filter(room_park=room_park)  # 只显示选定学院的会议室
     content = {"active_menu": 'view_room', "park_list": park_list, "room_park": room_park, "room_list": room_list,
-               "user": user}
-    return render(request=req, template_name='view_room.html', status=200, context=content)
+               "user": username}
+    return render(request=req, template_name='view_room.html', context=content)
 
 
 # 会议室详情
 def detail(req):
+    if not req.session.get('user'):  # 限制未登录查看页面
+        return redirect('/login')
     username = req.session.get('username', '')
     if username != '':
         user = Users.objects.get(username=username)
@@ -130,9 +132,10 @@ def detail(req):
     return render(request=req, template_name='detail.html', status=200, context=content)
 
 
-# 预定
 # 获取预定列表
 def order(req):
+    if not req.session.get('user'):  # 限制未登录查看页面
+        return redirect('/login')
     username = req.session.get('username', '')
     if username != '':
         user = Users.objects.get(username=username)
@@ -157,6 +160,8 @@ def get_order_list():
 
 # 查看预定信息
 def my_orders(req):
+    if not req.session.get('user'):  # 限制未登录查看页面
+        return redirect('/login')
     username = req.session.get('username', '')
     if username != '':
         user = Users.objects.get(username=username)
@@ -174,6 +179,8 @@ def my_orders(req):
 
 # 取消预定
 def cancel(req):
+    if not req.session.get('user'):  # 限制未登录查看页面
+        return redirect('/login')
     username = req.session.get('username', '')
     if username != '':
         user = Users.objects.get(username=username)
