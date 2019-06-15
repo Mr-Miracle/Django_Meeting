@@ -36,7 +36,7 @@ def register(req):
             new_DB_User.save()
             print(new_DB_User)
             message = '用户注册成功,请登录。'
-            return render(req, 'login.html', {'message': message})
+            return redirect(req, 'login.html', {'message': message})
 
 
 # 登录
