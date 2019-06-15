@@ -1,9 +1,7 @@
 """django 视图模块，通过它可以把用户请求的页面调出来。"""
-from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, redirect
-from django.http import HttpResponseRedirect
-from django.contrib.auth.hashers import make_password
 from django.contrib.auth.models import *
+from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect
 from Meeting.models import *
 
 
@@ -67,7 +65,7 @@ def login(req):
                 return render(req, 'login.html', {'message': message})
         else:
             return render(req, 'login.html', {'message': message})
-    return render(req, 'login.html', {'message': '用户不存在或在密码错误，'})
+    return render(req, 'login.html', {'message': '用户不存在或在密码错误，', })
 
 
 # 退出登录

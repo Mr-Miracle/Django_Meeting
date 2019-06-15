@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Meeting.apps.MeetingConfig',
+    'django.contrib.admindocs',
+    'captcha',
 ]
 
 MIDDLEWARE = [
